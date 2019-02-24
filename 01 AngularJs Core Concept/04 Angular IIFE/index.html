@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJs Immediattely Invoked Function Expression</title>
+    <script type="text/javascript" src="../../resources/angular.js"></script>
+    <script>
+        (function(){
+            var name = "myApp", requires = [];
+            angular.module(name, requires);
+        }());
+        console.log(angular.module("myApp"));
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

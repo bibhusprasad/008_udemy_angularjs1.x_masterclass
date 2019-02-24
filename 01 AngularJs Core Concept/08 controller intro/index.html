@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Add two number</title>
+    <script type="text/javascript" src="../../resources/angular.js"></script>
+    <!--  <script type="text/javascript" src="../../resources/jquery.min.js"></script> -->
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body ng-controller="addController">
+    
+    <h2>Add two number</h2>
+    First No: <input type="text" id="firstNum" 
+                     ng-model = "fNum"/><br />
+    Second No: <input type="text" id="secondNum"
+                      ng-model = "sNum"/><br />
+
+    <input type="button" value="Calculate" 
+           ng-click="calculate(fNum, sNum)"></br>
+
+    Result: <p id="result" ng-bind="result"></p>
+
+</body>
+
+</html>
